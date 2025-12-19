@@ -1,3 +1,4 @@
+```
 /**
  * ==========================================
  * 1. 設定値 (Configuration)
@@ -159,3 +160,5 @@ function callVertexAI(prompt) {
     throw new Error('Geminiからの応答が空、または想定外の形式です。');
   }
 }
+
+```
