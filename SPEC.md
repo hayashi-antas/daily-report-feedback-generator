@@ -7,16 +7,16 @@
 ---
 
 ## 1. 実装コンテキスト
-- **利用環境**：Google Workspace（企業プラン）上のスプレッドシート
+- **利用環境**：Googleのスプレッドシート
 - **データ構造**：
   1. **日記シート（シート名：日報）**：日報データを入力・出力するメインシート
   2. **プロンプトシート（シート名：prompts）**：プロンプトのテンプレートを管理するシート
 - **セキュリティ要件**：業務情報を含むため、APIキーのコード埋め込みは不可。
 - **認証・呼び出し方針**：
   - **Vertex AI (Gemini API in Vertex AI)** を利用する。
-  - 認証には **GASのOAuthトークン** を使用し、GCPプロジェクトと連携する。
+  - 認証には **GASのOAuthトークン** を使用し、Google Cloudプロジェクトと連携する。
 - **利用モデル・リージョン指定（Configuration）**：
-  - **Region (Location)**: `us-central1` （最新モデル利用のため必須）
+  - **Region (Location)**: `us-central1` 
   - **Model ID**: `gemini-2.5-flash`
 
 ---
